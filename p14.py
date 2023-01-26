@@ -1,0 +1,21 @@
+from tkinter import*
+def a():
+    E1.delete(2,2)
+    print(E1.get())
+    E1.icursor(3)
+    E1.insert(s,"hii")
+    print(E1.get())
+    E1.select_clear()
+    print(E1.select_present())
+    E1.select_range(1,5)
+top=Tk()
+L1=Label(top,text="User Name")
+L1.pack(side=LEFT)
+abc=StringVar()
+E1=Entry(top,textvariable=abc,bd=5,selectborderwidth=3,
+         highlightcolor="RED",justify="center",selectbackground="RED")
+E1.pack(side=RIGHT)
+btn=Button(text="click",command=0)
+btn.pack()
+print(abc.get())
+top.mainloop()
